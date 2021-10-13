@@ -9,7 +9,7 @@ const {
 
 // set up GET all and POST at /api/pizzas
 router
-    .router('/')
+    .route('/')
     .get(getAllPizza)
     .post(createPizza);
 

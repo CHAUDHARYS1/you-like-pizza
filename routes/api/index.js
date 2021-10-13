@@ -5,4 +5,4 @@ const pizzaRoutes = require('./pizza-routes');
 // add prefix of `/pizzas` to routes created in `pizza-routes.js`
 router.use('/pizzas', pizzaRoutes)
 
-moudle.exports = router;
+module.exports = router;

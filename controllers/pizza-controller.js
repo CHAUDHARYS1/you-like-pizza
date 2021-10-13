@@ -4,7 +4,7 @@ const PizzaController = {
     // get all pizzas
     getAllPizza(req, res) {
         Pizza.find({})
-        .then(dbPizzaData => res.json(db.PizzaData))
+        .then(dbPizzaData => res.json(dbPizzaData))
         .catch(err => {
             console.log(err);
             res.status(400).json(err);
@@ -36,7 +36,7 @@ const PizzaController = {
     },
 
     // update pizza by id
-    updatePizza({ parmas, body }, res){
+    updatePizza({ params, body }, res){
         Pizza.findOneAndUpdate({ _id: params.id }, body, { new: true })
         .then(dbPizzaData => {
             if (!dbPizzaData) {
