@@ -31,7 +31,7 @@ body {
   color: var(--primary);
   line-height: 1.5;
   font-size: 16px;
-  background-image: url('../images/header-bg.jpg');
+  /* background-image: url('../images/header-bg.jpg');*/
   background-size: cover;
   background-repeat: no-repeat;
   background-blend-mode: color;
@@ -760,14 +760,6 @@ select {
 .py-auto {
   padding-top: auto;
   padding-bottom: auto;
-}
-
-.round-25-80 {
-  /* border-radius: 25px 80px; */
-}
-
-.round-80-25 {
-  /* border-radius: 80px 25px; */
 }
 
 .opacity-8 {
